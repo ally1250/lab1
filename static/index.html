@@ -14,66 +14,77 @@
     <![endif]-->
 </head>
 
-<body>
-	<div>
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div>
-			<h1>Scott Klemmer</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-		</div>
+<style>
+	img {
+		width: 600px;
+	}
 
+	body {
+		padding: 2em 0;
+	}
+
+	.center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.project {
+		margin: 2.5em auto;
+		padding: 2em 0;
+		background-color:cadetblue;
+		width: 95%;
+		transition: all .2s linear;
+	}
+
+	.project:hover {
+		/* background-color: rgba(95, 158, 160, 0.70); */
+		background-color:rgba(233, 150, 122, 0.80);
+		transition: all .3s linear;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 16px;
+	}
+
+</style>
+
+<body>
+	<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+	<!-- p means paragraph -->
+	<div class="center">
+		<h1>Danling Wang</h1>
+		<p style="margin-bottom: 3em;">human-computer interaction &middot; front-end development</p>
 
 		<h4>Projects</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div id="project1">
-			<a href="project.html">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image">
-				<p>Waiting in Line</p>
+		<div id="project1" class="center">
+			<a href="amazon-project.html" class="center project">
+				<img src="images/amazon-project.png" alt="Amazon Project image">
+				<p style="margin-top:2em;">Amazon Internship Project</p>
 			</a>
 		</div>
-		<div id="project2">
-			<a href="project.html">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image">
-				<p>Needfinding</p>
+		<div id="project2" class="center">
+			<a href="ucsd-project.html" class="center project">
+				<img src="images/basic-needs-app.png" alt="Basic Needs image" style="width:250px;">
+				<p>UC San Diego Official App Development</p>
 			</a>
 		</div>
-		<div id="project3">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image">
-				<p>Prototyping</p>
+		<div id="project3" class="center">
+			<a href="recode-project.html" class="center project">
+				<img src="images/recode-web.png" alt="ReCode Website image">
+				<p style="margin-top:2em;">The CORE Platform Redesign and Development</p>
 			</a>
 		</div>
-		<div id="project4">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div id="project5">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div id="project6">
-			<a href="project.html">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div id="project7">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div id="project8">
-			<a href="project.html">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image">
-				<p>Design tools</p>
+		<div id="project4" class="center">
+			<a href="mfp-project.html" class="center project">
+				<img src="images/MFPChallenge.png" alt="MFP Challenge image" style="width:250px;">
+				<p>MyFitnessPal Fitness App Redesign</p>
 			</a>
 		</div>
 	</div>
